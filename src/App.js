@@ -1,14 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import BlogPage from './components/BlogPage';
+import Header from './components/Header';
+import HomePage from './components/HomePage';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='blog' element={<BlogPage />} />       
+        </Routes>
+      </div>
+    </Router>
+    
   );
 }
 
