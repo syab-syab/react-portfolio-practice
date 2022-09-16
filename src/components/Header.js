@@ -19,6 +19,7 @@ const Header = () => {
           </li>
           <li>
             {/* <LInk>SNS</LInk> */}
+            <a href="#">SNS</a>
           </li>
         </ul>
       </nav>
